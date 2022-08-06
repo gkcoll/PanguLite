@@ -1,0 +1,63 @@
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Input something:
+test.txt
+Is this a file or a paragraph of text?[f/t]: f
+Input something:
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Input something:
+test.txt
+Is this a file or a paragraph of text?[f/t]: f
+Input something:
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Input something:
+test.txt
+Is this a file or a paragraph of text?[f/t]: f
+Finish!!!
+Input something:
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添pause的习惯。
+Is this a file or a paragraph of text?[f/t]: t
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 71, in <module>
+    print(text_mode(object_))
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 59, in text_mode
+    result = add_write(text, "text")
+NameError: name 'add_write' is not defined. Did you mean: 'add_white'?
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Input something:
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添pause的习惯。
+Is this a file or a paragraph of text?[f/t]: t
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添 pause 的习惯。
+Input something:
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Input something:
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添pause的习惯。
+Is this a file or a paragraph of text?[f/t]: t
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添 pause 的习惯。
+Input something:
+
+===================================== RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py =====================================
+Input something:
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添pause的习惯。
+Is this a file or a paragraph of text?[f/t]: t
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 72, in <module>
+    print(text_mode(object_))
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 60, in text_mode
+    result = add_white(text, "text")
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 37, in add_white
+    result = result
+UnboundLocalError: local variable 'result' referenced before assignment
+
+===================================== RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py =====================================
+Input something:
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多     people    有在中西文之间添pause的习惯。
+Is this a file or a paragraph of text?[f/t]: t
+office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多 people 有在中西文之间添 pause 的习惯。
+Input something:

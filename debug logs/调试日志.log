@@ -1,0 +1,81 @@
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office', 'Web', 'problem', 'people', 'pause']
+[]
+['if', 'CSS', 'font', 'good']
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 23, in <module>
+    print(m)
+NameError: name 'm' is not defined
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', '', 'if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？']
+['office', 'Web', 'problem', 'people', 'pause']
+[]
+['if', 'CSS', 'font', 'good']
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。
+
+if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office', 'Web', 'problem', 'people', 'pause']
+[]
+['if', 'CSS', 'font', 'good']
+['office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', '', 'if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？']
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', '', 'if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？']
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。
+
+if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office', 'Web', 'problem', 'people', 'pause']
+office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。
+[]
+
+['if', 'CSS', 'font', 'good']
+if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+ office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多 people 有在中西文之间添 pause 的习惯。
+
+ if 可以通过 CSS 样式表来达到这一效果，和通过 font 技术来达到这一效果，哪个更 good ？
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', '', 'if可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？']
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office 软件一般都可以做到这一点。在Web端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', 'office 软件一般都可以做到这一点。在 Web 端这个problem尤为严重，所以有许多people有在中西文之间添pause的习惯。', 'office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多people有在中西文之间添pause的习惯。', 'office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多 people 有在中西文之间添pause的习惯。', 'office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多 people 有在中西文之间添 pause 的习惯。', 'if 可以通过CSS样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？', 'if 可以通过 CSS 样式表来达到这一效果，和通过font技术来达到这一效果，哪个更good？', 'if 可以通过 CSS 样式表来达到这一效果，和通过 font 技术来达到这一效果，哪个更good？', 'if 可以通过 CSS 样式表来达到这一效果，和通过 font 技术来达到这一效果，哪个更 good ？']
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+['office 软件一般都可以做到这一点。在 Web 端这个 problem 尤为严重，所以有许多 people 有在中西文之间添 pause 的习惯。', '', 'if 可以通过 CSS 样式表来达到这一效果，和通过 font 技术来达到这一效果，哪个更 good ？']
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 22, in <module>
+    new_paras_list.append(line)
+NameError: name 'new_paras_list' is not defined. Did you mean: 'new_para_list'?
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pangu\pangu.py", line 25, in <module>
+    for para in new_para_list:
+NameError: name 'new_para_list' is not defined. Did you mean: 'new_paras_list'?
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+OVER!!!
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+OVER!!!
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+OVER!!!
+
+============ RESTART: C:\Users\Administrator\Desktop\pangu\pangu.py ============
+OVER!!!
+
