@@ -10,13 +10,13 @@ English | [简体中文](README_zh-CN.md) | [繁體中文](README_zh-TW.md)
 
 ## Introduction
 
-This is a word processing program, which is used to add whitespace between Chinese and English in the string of mixed input of full width and half width symbols (you can understand it as mixed input of Chinese and English). This whitespace called **The White of Pangu** (盘古之白).
+This is a word processing program, which is used to insert whitespace between Chinese and English in the string of mixed input of full width and half width symbols (you can understand it as mixed input of Chinese and English). This whitespace called **The White of Pangu** (盘古之白).
 
-Originally, I wanted to develop this tool for a friend to help him form the habit of adding **The White of Pangu**, but there was no relevant cases or codes on Baidu.
+Originally, I wanted to develop this tool for a friend to help him form the habit of inserting **The White of Pangu**, but there was no relevant cases or codes on Baidu.
 
 So I plan to develop such a program with the little fur technology I only learned: it can add **The White of Pangu**.
 
-Later, I found a function of add [***The White of Pangu***](https://ol.woobx.cn/tool/pangu) on the [***Web WoodBox***](https://ol.woobx.cn). It marked that the tech provision: a program written by someone else (it looks like the traditional Chinese area) to achieve the same purpose, But It just a [*JavaScript* version](https://github.com/vinta/pangu.js). Then I find other languages version written by the same man, including [*Python* version](https://github.com/vinta/pangu.py).
+Later, I found a function of [***The White of Pangu***](https://ol.woobx.cn/tool/pangu) on the [***Web WoodBox***](https://ol.woobx.cn). It marked that the tech provision: a program written by someone else (it looks like the traditional Chinese area) to achieve the same purpose, But It just a [*JavaScript* version](https://github.com/vinta/pangu.js). Then I find other languages version written by the same man, including [*Python* version](https://github.com/vinta/pangu.py).
 
 When I seeing that the amount of code and neatness of the program I wrote are not as good as other‘s ( at least I think so ), I silently changed the project name to `Pangu Lite`.
 
@@ -114,13 +114,13 @@ You will get this output:
 
 2. *add_white*
 
-This is a function that can adds whitespace between the content of half width character (English, English periods, numbers, etc.) and full width character (Chinese characters, etc.), and it's the ***HEART*** of the whole program.
+This is a function that can insert whitespace between the content of half width character (English, English periods, numbers, etc.) and full width character (Chinese characters, etc.), and it's the ***HEART*** of the whole program.
 
-All input content will go through it, identify all the English and numbers in it, and add blanks at the beginning and end.
+All input content will go through it, identify all the English and numbers in it, and insert whitespaces at the beginning and end.
 
 The **Regex** for identifying non-Chinese characters is:
 
-> Note that there is a space in front of the `{0,}` before and after it, to match those half-width strings with more than one whitespace before and after (If have), and then add a space uniformly.
+> Note that there is a space in front of the `{0,}` before and after it, to match those half-width strings with more than one whitespace before and after (If have), and then insert spaces uniformly.
 
 ```regex
  {0,}[^\u4E00-\u9FFF\uF900-\uFA2D\u3400-\u4DBF\u2F00-\u2FD5\u2E80-\u2EF3\uE400-\uE5E8\uE600-\uE6CF\u31C0-\u31E3\u2FF0-\u2FFB\u3105-\u312F\u31A0-\u31BA\u3007\n，。·！￥…（）—、【】：；“‘”’《》？#/<>*]+ {0,}
@@ -139,8 +139,6 @@ Though after thinking about it, the following seems to work:
 ```regex
  {0,}[\w\."':;\$\(\),`] {0,}
 ```
-
-原理：找出所有符合条件的字符串后统一替换成首尾各加一个空白的字符串。
 
 Principle: Find all qualified strings and add a whitespace at their beginning and end.
 
@@ -239,9 +237,7 @@ Look, you have forgot to give a parameter again..
 
 * What does this program specifically adapt to?
 
-This program excludes file names, domain names, URLs, and Markdown document content that appear in the text by matching English periods, `#` signs, etc. together. 
-
-That is, as far as possible, without destroying the file format or adding extra blanks.
+This program excludes file names, domain names, URLs, and Markdown document content that appear in the text by matching English periods, `#` signs, etc. together.  That is, as far as possible, without destroying the file format or adding extra whitespace(s).
 
 * Can this project be redeveloped?
 
