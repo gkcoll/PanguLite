@@ -1,10 +1,10 @@
 '''
 @File    :   pangu_lite.py
-@Time    :   2023/03/05 09:42:30
+@Time    :   2023/03/11 18:16:30
 @Author  :   @灰尘疾客
 @Version :   1.0 Fixed
 @Site    :   https://www.gkcoll.xyz
-@Desc    :   全网为数偏少的盘古之白实现代码（Python）
+@Desc    :   为中英混排文本（主体为中文）的中英文之间添加空白。
 '''
 
 
@@ -18,16 +18,22 @@ def split_lines(file_content: str) -> list[str]:
 
 
 def add_whitespace(text: str) -> str:
-    """在中英文、数字和符号之间添加合适的空格"""
-    # 匹配所有非汉字字符（包括英文、数字和符号），排除换行符
-    regex = re.compile(r" {0,}[^\u4E00-\u9FFF\uF900-\uFA2D\u3400-\u4DBF\u2F00-\u2FD5\u2E80-\u2EF3\uE400-\uE5E8\uE600-\uE6CF\u31C0-\u31E3\u2FF0-\u2FFB\u3105-\u312F\u31A0-\u31BA\u3007\n，。·！￥…（）—、【】：；“‘”’《》？#]+ {0,}")
-    matches = list(set(regex.findall(text)))
+    """在中英文、数字和符号之间添加适当的空格"""
 
-    for match in matches:
+    # 匹配所有非汉字字符（包括英文、数字和符号），排除换行符
+    regex_1 = re.compile(r" {0,}[^\u4E00-\u9FFF\uF900-\uFA2D\u3400-\u4DBF\u2F00-\u2FD5\u2E80-\u2EF3\uE400-\uE5E8\uE600-\uE6CF\u31C0-\u31E3\u2FF0-\u2FFB\u3105-\u312F\u31A0-\u31BA\u3007\n，。·！￥…（）—、【】『』「」：；“‘”’《》？#]+ {0,}")
+    matches_1 = list(set(regex_1.findall(text)))
+    for match in matches_1:
         # 去除匹配内容首尾的空格，并在首尾添加一个空格
         text = text.replace(match, f" {match.strip()} ")
+    
+    # 匹配所有全角标点符号及其左右的空白，统一替换为该标点符号。
+    regex_2 = re.compile(r" {0,}[，。·~！￥……（）——【】：；”“’‘《》？] {0,}")
+    matches_2 = list(set(regex_2.findall(text)))
+    for match in matches_2:
+        text = text.replace(match, f"{match.strip()}")
 
-    return text.strip()
+    return text.rstrip().lstrip()
 
 
 def get_file_extension(filename: str) -> str:
@@ -35,7 +41,7 @@ def get_file_extension(filename: str) -> str:
     return os.path.splitext(filename)[1]
 
 
-def process_text(text: str) -> str:
+def process_text(text: str = "汉学家称这个空白字元为『盘古之白』，because它劈开了全形字和半角字之间的混沌。另有investigate显示，typing的时候不喜欢在Chinese和English之间加whitespace(s)的人，感情路都走得很辛苦，有70%会在34岁的时候wedding with自己不爱的人，而其余30%的人最后只能把遗产留给自己的cat。毕竟爱情跟书写都需要适时地留白。") -> str:
     """处理文本，增加合适的空格"""
     return add_whitespace(text)
 
@@ -78,4 +84,4 @@ if __name__ == '__main__':
         else:
             print("Invalid input..")
 
-        print("===========SESSION END===========")
+        print("======================")
